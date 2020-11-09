@@ -6,32 +6,37 @@
     <img width="33%" src="/images/loadup-enterprise-logo@3x.png"> 
 </p>
 
-# PHP Examples
+# JavaScript Examples
 
 ## Setup
 
-This example doesn't use any Composer packages
+You'll need any recent version of Node and a NPM compatible package manager. 
+
+Install node packages
+```
+npm install
+```
 
 ## Files
 
-*utils/graphqlClient.php*
+*utils/graphqlClient.js*
 
 This file has a common function that you can use to make an API call with LoadUp authentication
 
-*queries/scheduleRequests.php*
+*queries/scheduleRequests.js*
 
 This file uses the client to make a query, or request for data, for your current schedule requests
 with pagination.
 
-*mutations/createPricedScheduleRequest.php*
+*mutations/createPricedScheduleRequest.js*
 
 This file uses the client to make a mutation, or a change to data, to submit a new schedule request. This will be the most common kind of order you'll make.
 
 ## Usage
 
-To test out one of the queries, simply execute it via `php`
+To test out one of the queries, simply execute it via `node`
 on the command line after you've replaced placeholders in the file with your values. 
 
 ```
-php queries/scheduleRequests.php
+node queries/scheduleRequests.js
 ```

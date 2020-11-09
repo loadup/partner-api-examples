@@ -16,7 +16,7 @@ __Note:__ You can find the most updated information at on the [Partner API](http
 
 ## Language Specific Examples
 
-[Java](java/)  
+[JavaScript](javascript/)  
 [PHP](php/)
 
 __Are we missing a language you use? Let us know so we can add it!__
