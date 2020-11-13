@@ -18,6 +18,7 @@ __Note:__ You can find the most updated information at on the [Partner API](http
 
 [JavaScript](javascript/)  
 [PHP](php/)
+[Ruby](ruby/)
 
 __Are we missing a language you use? Let us know so we can add it!__
 
