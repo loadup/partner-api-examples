@@ -32,6 +32,9 @@ with pagination.
 
 This file uses the client to make a mutation, or a change to data, to submit a new schedule request. This will be the most common kind of order you'll make.
 
+*mutations/cancelScheduleRequest.js*
+This file uses the client to make a mutation to cancel an existing schedule request. Note this will only work if the customer hasn't scheduled with LoadUp.
+
 ## Usage
 
 To test out one of the queries, simply execute it via `node`
