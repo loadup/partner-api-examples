@@ -3,13 +3,8 @@
 require_once('./utils/graphqlClient.php');
 
 $query = <<<'GRAPHQL'
-mutation createPricedScheduleRequest($inputs: CreatePricedScheduleRequestInputs!) {
-  createPricedScheduleRequest(inputs: $inputs) {
-    scheduleRequest {
-      conversionPageUrl
-      id
-      total
-    }
+mutation cancelScheduleRequest($inputs: CancelScheduleRequestInputs!) {
+  cancelScheduleRequest(inputs: $inputs) {
     errorCode
   }
 }
@@ -26,15 +21,7 @@ $result = graphql_query(
     // You can find other possible inputs in the GraphQL docs.
     [
       'inputs' => [
-        'addressline1' => '123 Main St',
-        'city' => 'Atlanta',
-        'orderEmail' => 'johndoe@gmail.com',
-        'orderFirstName' => 'John',
-        'orderLastName' => 'Doe',
-        'orderPrimaryPhone' => '+12223334444',
-        'pricedPackageSku' => 'LOADUP_270E60F8',
-        'state' => 'GA',
-        'zip' => '30307'
+        'scheduleRequestId' => '<YOUR SCHEDULE REQUEST ID>'
         ]
     ],
     // Make sure to add your API Key here

@@ -30,6 +30,10 @@ This file uses the client to make a query, or request for data, for your current
 
 This file uses the client to make a mutation, or a change to data, to submit a new schedule request. This will be the most common kind of order you'll make.
 
+*mutations/cancel_schedule_request.rb*
+
+This file uses the client to make a mutation to cancel an existing schedule request. This will only work if the customer has not already schedule their service.
+
 ## Usage
 
 To test out one of the queries, simply execute it via `ruby`
