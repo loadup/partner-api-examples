@@ -8,6 +8,7 @@ mutation createPricedScheduleRequest($inputs: CreatePricedScheduleRequestInputs!
       conversionPageUrl
       id
       total
+      externalReferenceId
     }
     errorCode
   }
@@ -26,9 +27,8 @@ client.request(
       orderPrimaryPhone: '+12223334444',
       pricedPackageSku: 'LOADUP_270E60F8',
       state: 'GA',
-      zip: '30307'
+      zip: '30307',
+      externalReferenceId: 'your_reference_id' /*Typically your systems order#*/
     }
   }
 ).then((data) => console.log(data))
-
-

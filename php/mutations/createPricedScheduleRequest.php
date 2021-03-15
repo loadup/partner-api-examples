@@ -9,6 +9,7 @@ mutation createPricedScheduleRequest($inputs: CreatePricedScheduleRequestInputs!
       conversionPageUrl
       id
       total
+      externalReferenceId
     }
     errorCode
   }
@@ -34,7 +35,8 @@ $result = graphql_query(
         'orderPrimaryPhone' => '+12223334444',
         'pricedPackageSku' => 'LOADUP_270E60F8',
         'state' => 'GA',
-        'zip' => '30307'
+        'zip' => '30307',
+        'externalReferenceId' => 'your_reference_id'/*Typically your systems order#*/
         ]
     ],
     // Make sure to add your API Key here

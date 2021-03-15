@@ -7,6 +7,7 @@ CreatePricedScheduleRequestMutation = Client.parse <<-'GRAPHQL'
         conversionPageUrl
         id
         total
+        externalReferenceId
       }
       errorCode
     }
@@ -25,9 +26,9 @@ result = Client.query(
       orderPrimaryPhone: '+12223334444',
       pricedPackageSku: 'LOADUP_270E60F8',
       state: 'GA',
-      zip: '30307'
+      zip: '30307',
+      externalReferenceId: 'your_reference_id'# Typically your systems order#
     }
   }
 )
 pp result.data.to_h
-

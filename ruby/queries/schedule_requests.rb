@@ -10,6 +10,7 @@ ScheduleRequestsQuery = Client.parse <<-'GRAPHQL'
       scheduleRequests{
         id
         status
+        externalReferenceId
         order {
           status
         }
@@ -23,4 +24,3 @@ result = Client.query(
   variables: { inputs: { status: "OPEN" } }
 )
 pp result.data.to_h
-

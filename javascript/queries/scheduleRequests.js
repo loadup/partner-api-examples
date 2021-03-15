@@ -11,6 +11,7 @@ const query = gql`
       scheduleRequests{
         id
         status
+        externalReferenceId
         order {
           status
         }
@@ -21,7 +22,9 @@ const query = gql`
 
 client.request(
   query,
-  { inputs: { status: "OPEN" } }
+  {
+    inputs: {
+      status: "OPEN"
+    }
+  }
 ).then((data) => console.log(data))
-
-
