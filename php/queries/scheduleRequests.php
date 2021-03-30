@@ -13,6 +13,7 @@ $query = <<<'GRAPHQL'
       scheduleRequests{
         id
         status
+        externalReferenceId
         order {
           status
         }
